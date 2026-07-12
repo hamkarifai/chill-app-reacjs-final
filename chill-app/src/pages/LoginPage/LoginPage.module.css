@@ -1,0 +1,24 @@
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.link {
+  color: var(--color-text-muted);
+}
+
+.linkHighlight {
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.divider {
+  text-align: center;
+  color: var(--color-text-dim);
+  font-size: 11px;
+  margin: 12px 0;
+}

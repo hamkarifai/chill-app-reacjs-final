@@ -1,0 +1,16 @@
+export const GENRES = [
+  "Anak-anak",
+  "Drama",
+  "Komedi",
+  "Sains & Alam",
+  "Anime",
+  "Fantasi Ilmiah & Fantasi",
+  "Misteri",
+  "Thriller",
+  "Action",
+  "Kejahatan",
+  "Persaingan",
+  "Romant",
+  "Britania",
+  "KDrama",
+];

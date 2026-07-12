@@ -1,0 +1,68 @@
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 60px 60px;
+}
+
+/* Dark left gradient overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 35%,
+    rgba(0, 0, 0, 0.15) 100%
+  ),
+  linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    transparent 50%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+  animation: fadeUp 0.6s ease;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.description {
+  color: #ddd;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  max-width: 440px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { padding: 0 20px 40px; min-height: 380px; }
+  .description { display: none; }
+}

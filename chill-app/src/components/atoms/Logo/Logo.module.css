@@ -1,0 +1,8 @@
+.logo {
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  user-select: none;
+}

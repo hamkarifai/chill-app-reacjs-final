@@ -1,0 +1,30 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+/* Variants */
+.primary  { background: var(--color-primary); color: #fff; }
+.secondary { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(6px); }
+.outline  { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+.ghost    { background: transparent; color: var(--color-text-muted); border: none; }
+
+/* Sizes */
+.sm { padding: 6px 14px;  font-size: 12px; }
+.md { padding: 10px 24px; font-size: 14px; }
+.lg { padding: 13px 32px; font-size: 15px; }
+
+.fullWidth { width: 100%; }
+
+.icon { font-size: 1em; }

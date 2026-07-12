@@ -1,0 +1,52 @@
+:root {
+  --color-primary: #e50914;
+  --color-primary-hover: #b20710;
+  --color-bg: #111111;
+  --color-bg-card: #1a1a1a;
+  --color-bg-auth: #121212;
+  --color-text: #ffffff;
+  --color-text-muted: #888888;
+  --color-text-dim: #555555;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-star: #f5c518;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --transition: 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 9, 20, 0.5);
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

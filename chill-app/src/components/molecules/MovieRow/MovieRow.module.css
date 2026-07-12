@@ -1,0 +1,23 @@
+.section {
+  margin-bottom: 36px;
+}
+
+.heading {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  margin-left: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
